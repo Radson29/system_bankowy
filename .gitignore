@@ -1,0 +1,9 @@
+# Ignorowanie katalogu build
+cmake-build-debug/
+.idea/
+*.exe
+*.obj
+*.o
+*.log
+*.user
+*.cache

@@ -1,3 +1,0 @@
-C:/Users/Radek/Desktop/Banking-system-main/cmake-build-debug/CMakeFiles/Banking_system_main.dir
-C:/Users/Radek/Desktop/Banking-system-main/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Radek/Desktop/Banking-system-main/cmake-build-debug/CMakeFiles/rebuild_cache.dir
