@@ -26,7 +26,7 @@ Rozbudowany system bankowy wspierający wielu użytkowników oraz operacje finan
 - ✅ Obsługa czeków i ich realizacja
 - ✅ Weryfikacja i przenoszenie kont między bankami
 - ✅ System zadań dla pracowników
-- ✅ Trwałe przechowywanie danych
+- ✅ Przechowywanie danych
 
 ---
 
@@ -108,7 +108,6 @@ send_check 1000.50 kodABC123 12345
 ```
 Bank/
 ├── cpp/ – logika bankowa: Bank, Check, Klienci, Pracownicy
-├── h/ – nagłówki banku
 
 Commands/
 ├── CommandFactory.cpp – tworzenie komend
@@ -117,8 +116,8 @@ Commands/
 ├── CommandFromThirdPartyEmployee/ – komendy pracownika zewnętrznego
 
 Helpers/
-├── MyString – własna klasa string
-├── Vector, Queue – własne struktury danych
+├── MyString – klasa string
+├── Vector, Queue – struktury danych
 ├── Polymorphic_Ptr – inteligentny wskaźnik
 
 Login/
@@ -128,7 +127,7 @@ Users/
 ├── cpp/ – klasy użytkowników
 ├── Tasks/ – klasy zadań przypisanych do pracowników
 
-System.cpp – singleton zarządzający całym systemem
+System.cpp 
 main.cpp – punkt wejścia
 ```
 
@@ -137,10 +136,9 @@ main.cpp – punkt wejścia
 ## Wykorzystane technologie
 
 - ✅ Programowanie obiektowe (dziedziczenie, polimorfizm)
-- ✅ Wzorzec Singleton (`System`)
 - ✅ Polimorficzne wskaźniki (`Polymorphic_Ptr`)
 - ✅ Obsługa wyjątków (`try-catch`)
-- ✅ Własne struktury danych (Vector, Queue)
+- ✅ Struktury danych (Vector, Queue)
 - ✅ Serializacja do pliku (`userDataBase.txt`)
 
 ---
