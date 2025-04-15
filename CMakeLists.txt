@@ -1,0 +1,99 @@
+cmake_minimum_required(VERSION 3.30)
+project(Banking_system_main)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(.)
+include_directories(Bank/h)
+include_directories(Commands)
+include_directories(Commands/CommandFromClient)
+include_directories(Commands/CommandFromThirdPartyEmployee)
+include_directories(Commands/CommandsFromEmployee)
+include_directories(Helpers)
+include_directories(Login/h)
+include_directories(Users/h)
+include_directories(Users/Tasks/h)
+
+add_executable(Banking_system_main
+    Bank/cpp/Bank.cpp
+    Bank/cpp/Check.cpp
+    Bank/cpp/DataOfClientInTheBank.cpp
+    Bank/cpp/DataOfClients.cpp
+    Bank/cpp/DataOfEmployeeOfTheBank.cpp
+    Bank/cpp/DataOfEmployees.cpp
+    Bank/h/Bank.h
+    Bank/h/Check.h
+    Bank/h/DataOfClientInTheBank.h
+    Bank/h/DataOfClients.h
+    Bank/h/DataOfEmployeeOfTheBank.h
+    Bank/h/DataOfEmployees.h
+    Commands/CommandFromClient/ChangeAccountCommand.cpp
+    Commands/CommandFromClient/ChangeAccountCommand.h
+    Commands/CommandFromClient/CheakAvlCommand.cpp
+    Commands/CommandFromClient/CheakAvlCommand.h
+    Commands/CommandFromClient/CloseAccountCommand.cpp
+    Commands/CommandFromClient/CloseAccountCommand.h
+    Commands/CommandFromClient/ListCommand.cpp
+    Commands/CommandFromClient/ListCommand.h
+    Commands/CommandFromClient/MessageCommand.cpp
+    Commands/CommandFromClient/MessageCommand.h
+    Commands/CommandFromClient/OpenAccountCommand.cpp
+    Commands/CommandFromClient/OpenAccountCommand.h
+    Commands/CommandFromClient/RedeemCommand.cpp
+    Commands/CommandFromClient/RedeemCommand.h
+    Commands/CommandFromClient/WhoAmICommand.cpp
+    Commands/CommandFromClient/WhoAmICommand.h
+    Commands/CommandFromThirdPartyEmployee/SendCheckCommand.cpp
+    Commands/CommandFromThirdPartyEmployee/SendCheckCommand.h
+    Commands/CommandsFromEmployee/ApproveCommand.cpp
+    Commands/CommandsFromEmployee/ApproveCommand.h
+    Commands/CommandsFromEmployee/DisapproveCommand.cpp
+    Commands/CommandsFromEmployee/DisapproveCommand.h
+    Commands/CommandsFromEmployee/TaskCommand.cpp
+    Commands/CommandsFromEmployee/TaskCommand.h
+    Commands/CommandsFromEmployee/ValidateCommand.cpp
+    Commands/CommandsFromEmployee/ValidateCommand.h
+    Commands/CommandsFromEmployee/ViewCommand.cpp
+    Commands/CommandsFromEmployee/ViewCommand.h
+    Commands/Command.cpp
+    Commands/Command.h
+    Commands/CommandFactory.cpp
+    Commands/CommandFactory.h
+    Commands/CommandFromClient.h
+    Commands/CommandFromEmployee.h
+    Commands/CommandFromThirdPartyEmployee.cpp
+    Commands/CommandFromThirdPartyEmployee.h
+    Commands/ExitCommand.cpp
+    Commands/ExitCommand.h
+    Helpers/MyString.cpp
+    Helpers/MyString.h
+    Helpers/Polymorphic_Ptr.hpp
+    Helpers/Queue.hpp
+    Helpers/Vector.hpp
+    Login/cpp/Login.cpp
+    Login/h/Login.h
+    Users/cpp/Client.cpp
+    Users/cpp/Employee.cpp
+    Users/cpp/Message.cpp
+    Users/cpp/ThirdPartyEmployee.cpp
+    Users/cpp/User.cpp
+    Users/cpp/UsersFactory.cpp
+    Users/h/Client.h
+    Users/h/Employee.h
+    Users/h/Message.h
+    Users/h/ThirdPartyEmployee.h
+    Users/h/User.h
+    Users/h/UsersFactory.h
+    Users/Tasks/cpp/Change_task.cpp
+    Users/Tasks/cpp/Close_task.cpp
+    Users/Tasks/cpp/Open_task.cpp
+    Users/Tasks/cpp/Task.cpp
+    Users/Tasks/cpp/TaskFactory.cpp
+    Users/Tasks/h/Change_task.h
+    Users/Tasks/h/Close_task.h
+    Users/Tasks/h/Open_task.h
+    Users/Tasks/h/Task.h
+    Users/Tasks/h/TaskFactory.h
+    main.cpp
+    System.cpp
+    System.h)
