@@ -1,7 +1,7 @@
 
 # System Bankowy
 
- System bankowy(konsolowy) wspierający wielu użytkowników oraz operacje finansowe. Aplikacja umożliwia zarządzanie kontami bankowymi, czekami, zadaniami pracowników oraz logowaniem i rejestracją użytkowników.
+ System bankowy (konsolowy) wspierający wielu użytkowników oraz operacje finansowe. Aplikacja umożliwia zarządzanie kontami bankowymi, czekami, zadaniami pracowników oraz logowaniem i rejestracją użytkowników.
 
 ---
 
